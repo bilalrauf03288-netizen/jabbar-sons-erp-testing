@@ -3,22 +3,17 @@ import {
   LayoutDashboard,
   ShoppingCart,
   Package,
-  Users,
   BarChart3,
   Search,
   Bell,
   Menu,
-  X,
   LogOut,
   Sun,
   Moon,
   Wallet,
-  HelpCircle,
   Lock,
-  User,
   Plus,
   TrendingUp,
-  Save,
   CalendarDays,
   Download
 } from 'lucide-react';
@@ -63,7 +58,6 @@ export default function App() {
     setSaleItem('');
     setSaleQty(1);
   };
- test
   const totalStockValue = inventory.reduce((acc, item) => acc + item.price * item.stock, 0);
   const totalProfitPotential = inventory.reduce((acc, item) => acc + (item.price - item.cost) * item.stock, 0);
   const lowStockItems = inventory.filter((item) => item.stock < 10).length;
