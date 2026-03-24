@@ -63,7 +63,7 @@ export default function App() {
     setSaleItem('');
     setSaleQty(1);
   };
-
+ test
   const totalStockValue = inventory.reduce((acc, item) => acc + item.price * item.stock, 0);
   const totalProfitPotential = inventory.reduce((acc, item) => acc + (item.price - item.cost) * item.stock, 0);
   const lowStockItems = inventory.filter((item) => item.stock < 10).length;
